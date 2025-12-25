@@ -18,7 +18,6 @@ type_mapping = {
     "PAYMENT": 3,
     "TRANSFER": 4
 }
-
 # User selects friendly label
 transaction_type_label = st.selectbox("Select Transaction Type", list(type_mapping.keys()))
 Type_Encoded = type_mapping[transaction_type_label]  # convert to numeric code for model
